@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.showcase {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #444;
+    color: #fff;
+}
+
+.showcase img {
+    width: 100%;
+    max-width: 400px; /* Zmenšená šířka pro lepší vzhled */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem; /* Přidání mezery mezi textem a obrázkem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Přidání stínu pro lepší vzhled */
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.icon-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.icon-item i {
+    font-size: 3rem;
+    color: #444;
+}
+
+.icon-item p {
+    margin-top: 0.5rem;
+}
+
+.tables {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.tables table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.tables th, .tables td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #fff;
+    min-height: 60vh;
+}
+
+.contact-form h1 {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+contact-form input[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+.history-section, .rules-section, .players-section, .about-section {
+    padding: 2rem;
+    background-color: #fff;
+    color: #444;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.history-section h1, .rules-section h1, .players-section h1, .about-section h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.history-section article, .rules-section article, .players-section article, .about-section article {
+    padding: 1rem 2rem;
+}
+
+.history-section h2, .rules-section h2, .players-section h2, .about-section h2 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 0.5rem;
+}
+
+.history-section p, .rules-section p, .players-section p, .about-section p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .showcase img {
+        width: 100%;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .icon-item {
+        margin-bottom: 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .contact-form form {
+        padding: 1rem;
+    }
+
+    .history-section, .rules-section, .players-section, .about-section {
+        padding: 1rem;
+    }
+}
+
+.projects-section {
+    text-align: center;
+    padding: 5rem 10rem;
+    background: var(--main-blue);
+  }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+
+.project-tile img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+

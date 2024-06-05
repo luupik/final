@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="history.html">Historie</a></li>
+                <li><a href="rules.html">Pravidla</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+                <li><a href="players.html">Hráči</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h1>Kontakt</h1>
+            <form action="submit_form.html" method="post">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="subject">Předmět:</label><br>
+                <input type="radio" id="subject1" name="subject" value="dotaz" required> Dotaz<br>
+                <input type="radio" id="subject2" name="subject" value="feedback"> Zpětná vazba<br>
+                <input type="radio" id="subject3" name="subject" value="other"> Jiný<br><br>
+
+                <label for="subscribe">Přihlásit se k newsletteru:</label>
+                <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+                <label for="message">Zpráva:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Odeslat">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>JEDU JEDU</p>
+    </footer>
+</body>
+</html>
